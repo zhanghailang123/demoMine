@@ -16,7 +16,8 @@ public class VolatileTest {
 
     public static void main(String[] args) throws InterruptedException {
         test2();
-//        testVola1();
+//        testVola1()
+        Integer integer = new Integer(10);
     }
 
     public static void test2() {
@@ -49,10 +50,13 @@ public class VolatileTest {
 
 
 
-
+    // 冷静集中专注努力 Java中所使用的并发机制都是基于JVM的实现和CPU的指令 Know Who You Are
+    // 现在勇敢一些 老了就不会后悔了 千万别让自己遗憾后悔了
+    //HTTPS = HTTP + SSL/TLS ji
     public static void testVola1() {
         new Thread(() -> {
             for (int j = 0; j < 30000; j++) {
+                //这本质并不是一个原子操作
                 i++;
                 System.out.println(Thread.currentThread().getName() + " : " + i);
             }

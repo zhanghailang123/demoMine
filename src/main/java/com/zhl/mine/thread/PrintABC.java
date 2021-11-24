@@ -18,7 +18,7 @@ public class PrintABC {
 
 
 
-    //冷静 集中 专注 努力
+    //冷静 集中 专注 努力 专注
     public static void reenLock() {
         //缺少一个控制线程本身运行的状态
         ReentrantLock lockA = new ReentrantLock();
